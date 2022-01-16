@@ -1,0 +1,22 @@
+function roll_n_drop_lowest(dice, n) {
+    Number lowest_result;
+    Number new_result;
+    Number sum;
+    Number i;
+    i = 1;
+    lowest_result = ^dice;
+    sum = 0;
+    while (i < n) {
+        new_result = ^dice;
+        if (new_result < lowest_result) {
+            sum = sum + lowest_result;
+            lowest_result = new_result;
+        } else {
+            sum = sum + new_result;
+        }
+        i = i + 1;
+    }
+    return sum;
+}
+
+?roll_n_drop_lowest(1d6, 4);

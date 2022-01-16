@@ -1,0 +1,19 @@
+function power(base, exponent) {
+    Number result;
+    result = 1;
+    if (exponent < 0) {
+        exponent = 0 - exponent;
+        base = 1 / base;
+    }
+    while (exponent > 0) {
+        result = result * base;
+        exponent = exponent - 1;
+    }
+    return result;
+}
+
+?power(2, 10);
+?power(10, 3);
+?power(2, 0-1);
+?power(2, 0-2);
+?power(7, 0-4);

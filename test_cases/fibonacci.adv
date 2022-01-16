@@ -1,0 +1,17 @@
+function fib(n) {
+    if (n <= 1) {
+        return n;
+    }
+    Number fib_one;
+    Number fib_two;
+    fib_one = fib(n-1);
+    fib_two = fib(n-2);
+    return fib_one + fib_two;
+}
+
+Number i;
+i = 0;
+while (i <= 20) {
+    ?fib(i);
+    i = i + 1;
+}

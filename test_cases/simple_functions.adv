@@ -1,0 +1,24 @@
+function add(a, b) {
+    return a + b;
+}
+Number result;
+result = add(2, 5);
+
+function print(str) {
+    ?str;
+}
+print("Hello, world!");
+
+?roll_one();
+function roll_one() {
+    return ^1d1;
+}
+
+function test(n) {
+    if (n < 1) {
+        return n;
+    }
+    return n - 1;
+}
+?test(0);
+?test(5);
